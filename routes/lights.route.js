@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var hueLogic = require('../logic/hue.logic');
 
-/* GET users listing. */
+
 router.get('/', function(req, res) {
   res.send('Gets state for all lights');
 });
