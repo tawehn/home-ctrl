@@ -9,6 +9,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(config.apiPrefix+'/lights', require('./routes/lights.route'));
+app.use(config.apiPrefix+'/alerts', require('./routes/alerts.route'));
+app.use(config.apiPrefix+'/scenes', require('./routes/scenes.route'));
 
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
