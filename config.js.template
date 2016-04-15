@@ -1,0 +1,8 @@
+var config = {};
+
+config.port = 3000;
+config.hueBridgeHostname = '';
+config.hueBridgeApiUsername = '';
+config.wundergroundApiKey = '';
+
+module.exports = config;
